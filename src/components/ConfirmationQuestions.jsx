@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from 'react';
+import { PropTypes } from 'prop-types';
 function ConfirmationQuestions(props) {
   return (
     <div>
@@ -11,5 +11,9 @@ function ConfirmationQuestions(props) {
     </div>
   );
 }
+
+ConfirmationQuestions.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+};
 
 export default ConfirmationQuestions;
