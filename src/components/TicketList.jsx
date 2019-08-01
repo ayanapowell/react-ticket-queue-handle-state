@@ -1,6 +1,6 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
-import Ticket from './Ticket';
+import React from "react";
+import { PropTypes } from "prop-types";
+import Ticket from "./Ticket";
 
 function TicketList(props) {
   return (
@@ -12,6 +12,8 @@ function TicketList(props) {
           location={ticket.location}
           issue={ticket.issue}
           formattedWaitTime={ticket.formattedWaitTime}
+          currentRouterPath={props.currentRouterPath}
+          onTicketSelection={props.onTicketSelection}
           key={ticket.id}
         />
       ))}
